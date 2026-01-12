@@ -22,7 +22,7 @@ BASE_URL = "https://fapi.binance.com"
 DISCORD_WEBHOOK_URL = os.getenv("https://discord.com/api/webhooks/1460100896942854265/y8P743R0sZpgR06D3WcLvfcnsAroCzyWCzEvwnmu4JBzk5k_6C_O9089oOMQdotHumVo") 
 DATA_FILE = "binance_oi_data_history.csv"
 TAIWAN_TZ = timezone(timedelta(hours=8))
-CHECK_INTERVAL = 300 
+CHECK_INTERVAL = 45 
 OI_THRESHOLD = 20  
 PRICE_THRESHOLD = 2  
 
@@ -146,3 +146,4 @@ async def main():
 
 if __name__ == "__main__":
     asyncio.run(main())
+
