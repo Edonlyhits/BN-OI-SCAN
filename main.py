@@ -23,8 +23,8 @@ DISCORD_WEBHOOK_URL = os.getenv("https://discord.com/api/webhooks/14601008969428
 DATA_FILE = "binance_oi_data_history.csv"
 TAIWAN_TZ = timezone(timedelta(hours=8))
 CHECK_INTERVAL = 45 
-OI_THRESHOLD = 5  
-PRICE_THRESHOLD = 1.2  
+OI_THRESHOLD = 2  
+PRICE_THRESHOLD = 0.8  
 
 # --- 核心函數 ---
 
@@ -146,5 +146,6 @@ async def main():
 
 if __name__ == "__main__":
     asyncio.run(main())
+
 
 
